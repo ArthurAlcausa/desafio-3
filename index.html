@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite para Evento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Crie seu convite</h2>
+
+    <section class="form-section">
+      <h3>Sobre o evento</h3>
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Nome do evento">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inicio">Início</label>
+          <input type="datetime-local" id="inicio">
+        </div>
+        <div class="form-group">
+          <label for="fim">Fim</label>
+          <input type="datetime-local" id="fim">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tipo</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tipo" checked> Presencial</label>
+            <label><input type="radio" name="tipo"> Online</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="local">Local</label>
+          <input type="text" id="local" placeholder="Link ou endereço">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h3>Personalização</h3>
+      <label>Cor principal</label>
+      <div class="color-picker">
+        <span class="color-option" style="background-color: #2196F3;"></span>
+        <span class="color-option" style="background-color: #9C27B0;"></span>
+        <span class="color-option" style="background-color: #E91E63;"></span>
+        <span class="color-option" style="background-color: #FF5722;"></span>
+        <span class="color-option" style="background-color: #FFEB3B;"></span>
+        <span class="color-option" style="background-color: #4CAF50;"></span>
+        <span class="color-option" style="background-color: #FF9800;"></span>
+        <span class="color-option" style="background-color: #00BCD4;"></span>
+      </div>
+
+      <label>Tema do evento</label>
+      <div class="theme-selector">
+        <div class="theme-option">Aniversário</div>
+        <div class="theme-option">Infantil</div>
+        <div class="theme-option">Formatura</div>
+        <div class="theme-option">Casamento</div>
+        <div class="theme-option">Chá de bebê</div>
+        <div class="theme-option">Chá de panela</div>
+        <div class="theme-option">Carnaval</div>
+        <div class="theme-option">Páscoa</div>
+        <div class="theme-option">São João</div>
+        <div class="theme-option">Halloween</div>
+        <div class="theme-option">Natal</div>
+        <div class="theme-option">Outro</div>
+      </div>
+
+      <div class="form-group">
+        <label for="foto">Foto de capa</label>
+        <input type="file" id="foto">
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h3>Dados para contato</h3>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Nome completo" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="exemplo@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" placeholder="(99) 99999-9999" required>
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" required> Li e concordo com os <a href="#">Termos & Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+        <label><input type="checkbox"> Aceito receber atualizações e promoções por e-mail</label>
+        <label><input type="checkbox"> Aceito receber atualizações e promoções por SMS</label>
+      </div>
+    </section>
+
+    <button class="submit-button">Gerar convite</button>
+  </div>
+</body>
+</html>
+
